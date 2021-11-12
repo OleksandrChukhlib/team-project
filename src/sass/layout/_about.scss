@@ -16,11 +16,20 @@
 // about title - to be deleted after section-title will be made
 .about-title {
   margin-bottom: 26px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 200px;
   font-family: var(--secondary-font);
   @include font(34px, 400, 39px, 0.04em);
   color: var(--primary-title-color);
   text-align: center;
   text-transform: uppercase;
+}
+
+.about-picture {
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .about-article {
