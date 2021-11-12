@@ -1,0 +1,94 @@
+.contacts-section-title {
+  display: none;
+}
+.contacts-section {
+  background-color: #fff5f6;
+}
+.cafe {
+  width: 80px;
+  height: 16px;
+  left: 70px;
+  top: 5163px;
+  background: #f0d1a5;
+  border-radius: 4px;
+}
+.contacts-elements {
+  &:not(:first-child) {
+    padding-top: 25px;
+  }
+  &:not(:last-child) {
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e1e1e1;
+  }
+}
+
+.contact-section-box__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+.foodtruck {
+  width: 130px;
+  height: 16px;
+  left: 70px;
+  top: 5610px;
+
+  background: #c2e297;
+  border-radius: 4px;
+}
+.contact-box-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  letter-spacing: 0.04em;
+  color: #000000;
+}
+.contact-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #907e82;
+}
+.time-work-item__day {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  letter-spacing: 0.04em;
+  color: #000000;
+}
+.time-work-item__time {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  letter-spacing: 0.04em;
+  color: #ffa5ba;
+}
+.contacts {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #907e82;
+}
+.contact-section-box {
+  width: 220px;
+  height: 427px;
+  background: #ffffff;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 43px;
+  padding-bottom: 43px;
+  margin-bottom: 20px;
+}
