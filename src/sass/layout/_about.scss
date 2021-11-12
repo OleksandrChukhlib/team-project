@@ -20,17 +20,12 @@
   color: var(--secondary-title-color);
 }
 
-// about title - to be deleted after section-title will be made
 .about-title {
   margin-bottom: 26px;
   margin-right: auto;
   margin-left: auto;
   max-width: 200px;
-  font-family: var(--secondary-font);
-  @include font(34px, 400, 39px, 0.04em);
   color: var(--primary-title-color);
-  text-align: center;
-  text-transform: uppercase;
 }
 
 .about-picture {
@@ -63,13 +58,26 @@
 .about-btn {
   width: 176px;
   height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: none;
-  font-family: inherit;
+  font-family: var(--primary-font);
   color: var(--primary-title-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &::after {
-    content: '>';
+    content: '';
     margin-left: 13px;
-    font-weight: 700;
+    width: 8px;
+    height: 10px;
+    color: currentColor;
+    background-image: url(/images/btn-icon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &:hover {
+    background-color: #ecebeb;
   }
 }
