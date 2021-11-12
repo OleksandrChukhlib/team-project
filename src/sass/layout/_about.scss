@@ -41,14 +41,14 @@
   margin-right: auto;
 }
 
-.about-article-heading {
+.about-article__heading {
   margin-bottom: 47px;
   font-family: var(--primary-font);
   @include font(12px, 500, 19.44px, normal);
   color: var(--secondary-text-color);
 }
 
-.about-article-text {
+.about-article__text {
   margin-bottom: 38px;
   font-family: var(--primary-font);
   @include font(12px, 500, 19.44px, normal);
