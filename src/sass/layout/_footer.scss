@@ -5,7 +5,6 @@
   // .footer__title
 
   &__title {
-    padding-top: 117px;
     padding-bottom: 37px;
   }
 
@@ -19,6 +18,9 @@
 
   &__contact-block {
     padding-bottom: 43px;
+    @media screen and (min-width: 768px) {
+      padding-bottom: 0px;
+    }
   }
 
   // .footer__copyright
@@ -41,6 +43,15 @@
     color: var(--secondary-title-color);
     width: 232px;
     height: 42px;
+    margin-bottom: 17px;
+    @media screen and (min-width: 767px) {
+      font-size: 26px;
+      line-height: 30px;
+      letter-spacing: 0.04em;
+      width: 340px;
+      height: 57px;
+      margin-bottom: 16px;
+    }
   }
 
   // .title-for-footer__title
@@ -55,14 +66,16 @@
     color: var(--primary-title-color);
     width: 200px;
     height: 76px;
+    @media screen and (min-width: 767px) {
+      font-size: 48px;
+      line-height: 55px;
+      letter-spacing: 0.06em;
+      width: 340px;
+      height: 110px;
+    }
   }
 }
-.social-for-footer {
-  // .social-for-footer__list
 
-  &__list {
-  }
-}
 .footer-social-list {
   display: flex;
   @media screen and (max-width: 767px) {
@@ -90,6 +103,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    &:hover,
+    &:focus {
+      background-color: var(--primary-title-color);
+    }
   }
 
   // .footer-social-list__icons
@@ -112,8 +129,12 @@
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
-    line-height: 186%;
+    line-height: calc(22 / 12);
     color: var(--secondary-text-color);
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      line-height: calc(26 / 14);
+    }
   }
 
   // .contact-for-footer__link
@@ -123,8 +144,12 @@
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
-    line-height: 186%;
+    line-height: calc(22 / 12);
     color: var(--primary-title-color);
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      line-height: calc(26 / 14);
+    }
   }
 }
 .copyright-for-footer {
@@ -140,9 +165,29 @@
     width: 140px;
     height: 42px;
     margin: 0 auto;
+    @media screen and (min-width: 768px) {
+      width: 276px;
+      height: 26px;
+    }
   }
 }
 
 .border-bottom {
   border-bottom: 1px solid #e1e1e1;
+  padding-top: 119px;
+  @media screen and (min-width: 768px) {
+    padding-top: 158px;
+  }
+}
+
+.footer-flex {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.flex-tab {
+  @media screen and (min-width: 768px) {
+    flex-grow: 2;
+  }
 }
