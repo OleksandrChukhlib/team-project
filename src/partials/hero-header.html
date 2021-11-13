@@ -1,8 +1,11 @@
-<header class="header container">
-    <a href="./about.html" class="logo"><img src="../images/icecream-logo1x.jpg" alt="icecream logo"></a>
-    <button type="button" class="header__btn "><svg class="header__btn__icon"><use href="../images/icons.svg#icon-burger" /></svg></button>
+<header class="header">
+    <div class="container header__wrapper">
+    <a href="" class="logo"><img src="./images/icecream-logo1x.png" alt="icecream logo"></a>
+    <button type="button" class="header__btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu"><svg class="header__btn__icon"><use href="./images/icons.svg#icon-burger" /></svg></button>
+    </div>
 </header>
-<section class="hero container">
+<section class="hero">
+    <div class="container">
     <h1 class="hero__title">
         ice cream made with <span class="hero__title__decorate">passion</span> 
     </h1>
@@ -10,12 +13,14 @@
         <button type="button" class="hero__btn hero__btn__first btn">Products</button>
         <button type="button" class="hero__btn hero__btn__second btn">How it’s made?</button>
     </div>
-    <div class="mobile-container">
-        <button type="button" class="mobile-container__btn-close"><svg class="btn-close__icon">
-            <use href="../images/icons.svg#icon-close" />
+    </div>
+</section>
+    <div class="mobile-container js-menu-container" id="mobile-menu">
+        <button type="button" class="mobile-container__btn-close js-close-menu"><svg class="btn-close__icon">
+            <use href="./images/icons.svg#icon-close" />
         </svg></button>
         <button type="button" class="mobile-container__btn btn">
-            Buy now <svg class="mobile-container__btn__icon"><use href="../images/icons.svg#icon-tick" /></svg>
+            Buy now <svg class="mobile-container__btn__icon"><use href="./images/icons.svg#icon-tick" /></svg>
         </button>
         <ul class="mobile-container__menu">
             <li class="mobile-container__item"><a href="" class="mobile-container__link">Home</a></li>
@@ -25,4 +30,3 @@
             <li class="mobile-container__item"><a href="" class="mobile-container__link">Contact</a></li>           
         </ul>
     </div>
-</section>
