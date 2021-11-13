@@ -2,7 +2,10 @@
   display: none;
 }
 .contacts-section {
-  background-color: #fff5f6;
+  background: linear-gradient(to top, #fff5f6, #fff5f6 94%, #ffffff 6%, #ffffff 6%);
+  @media screen and (min-width: 768px) {
+    background: linear-gradient(to top, #fff5f6, #fff5f6 85%, #ffffff 15%, #ffffff 15%);
+  }
 }
 .contact-container {
   margin: 0 auto;
@@ -165,6 +168,13 @@
     left: 194px;
     top: 4027px;
   }
+}
+.btn-contacts-svg {
+  margin-left: 13px;
+  width: 8px;
+  height: 10px;
+  color: currentColor;
+  background: #d41443;
 }
 .contacts-btn-second {
   width: 161.45px;
