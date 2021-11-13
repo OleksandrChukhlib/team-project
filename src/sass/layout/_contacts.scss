@@ -202,8 +202,10 @@
     margin-bottom: 10px;
   }
   @media screen and (min-width: 768px) {
+    margin-bottom: 0;
     justify-content: center;
     text-align: center;
+
     &:not(:last-child) {
       margin-right: 15px;
     }
