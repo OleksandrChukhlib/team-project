@@ -1,6 +1,8 @@
 .products {
   padding-top: 121px;
   padding-bottom: 98px;
+  @media screen and (min-width: 768) {
+  }
 }
 .products__label {
   @include font(18px, 400, 21px, 1px);
@@ -28,10 +30,18 @@
   transform: translateX(-50%);
 }
 .products-content {
-  background-color: var(--primary-bg-color);
   border-radius: 24px;
   padding-top: 161px;
   padding-bottom: 41px;
+}
+.ice-cream {
+  background-color: rgba(255, 184, 202, 1);
+}
+.ice-coffee {
+  background-color: rgba(240, 209, 165, 1);
+}
+.milkshakes {
+  background-color: rgba(194, 226, 151, 1);
 }
 .products-content__title {
   font-family: var(--secondary-font);
