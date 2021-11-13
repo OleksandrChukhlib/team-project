@@ -1,5 +1,5 @@
 .about {
-  padding-top: 122px;
+  padding-top: 125px;
   padding-bottom: 39px;
   background-color: var(--secondary-bg-color);
   background-image: url('/images/bgi-about.png');
@@ -9,6 +9,13 @@
   background-size: 320px 133px;
   background-repeat: no-repeat;
   background-position: 50% 90%;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 130px;
+    background-image: none;
+    padding-top: 130px;
+    padding-bottom: 66px;
+  }
 }
 
 .about-lable {
@@ -26,19 +33,43 @@
   margin-left: auto;
   max-width: 200px;
   color: var(--primary-title-color);
-}
-
-.about-picture {
-  width: 100%;
-  max-width: 280px;
-  margin-left: auto;
-  margin-right: auto;
+  @media screen and (min-width: 768px) {
+    max-width: 100%;
+    margin-bottom: 50px;
+  }
 }
 
 .about-article {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    max-width: 100%;
+  }
+}
+
+.about-picture {
+  display: block;
+  height: auto;
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 768px) {
+    // width: 50%;
+    max-width: 340px;
+    margin-left: 0;
+    margin-right: 17px;
+  }
+}
+
+.about-article__description {
   max-width: 220px;
   margin-left: auto;
   margin-right: auto;
+  @media screen and (min-width: 768px) {
+    padding-top: 50px;
+    max-width: 340px;
+    // width: 50%;
+    margin-left: 0;
+  }
 }
 
 .about-article__heading {
@@ -46,6 +77,10 @@
   font-family: var(--primary-font);
   @include font(12px, 500, 19.44px, normal);
   color: var(--secondary-text-color);
+
+  @media screen and (min-width: 768px) {
+    @include font(14px, 500, 19.44px, normal);
+  }
 }
 
 .about-article__text {
@@ -53,6 +88,10 @@
   font-family: var(--primary-font);
   @include font(12px, 500, 19.44px, normal);
   color: var(--third-text-color);
+  @media screen and (min-width: 768px) {
+    margin-bottom: 62px;
+    @include font(14px, 500, 19.44px, normal);
+  }
 }
 
 .about-btn {
