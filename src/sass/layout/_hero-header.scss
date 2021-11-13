@@ -2,6 +2,9 @@
   position: fixed;
   padding: 6px 20px;
   background-color: var(--primary-bg-color);
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 
 .logo {
