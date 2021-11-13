@@ -103,9 +103,6 @@
 
 .footer-social-list {
   display: flex;
-  @media screen and (max-width: 767px) {
-    min-width: 290px;
-  }
   justify-content: right;
   // .footer-social-list__item
 
