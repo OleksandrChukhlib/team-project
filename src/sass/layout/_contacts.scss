@@ -149,7 +149,7 @@
 }
 
 .contacts-btn-first {
-  width: 161.45px;
+  width: 162px;
   height: 44px;
   left: 79px;
   top: 6495px;
@@ -171,13 +171,12 @@
 }
 .btn-contacts-svg {
   margin-left: 13px;
-  width: 8px;
-  height: 10px;
-  color: currentColor;
-  background: #d41443;
+  width: 5px;
+  height: 8px;
+  fill: currentColor;
 }
 .contacts-btn-second {
-  width: 161.45px;
+  width: 162px;
   height: 44px;
   left: 79px;
   top: 6495px;
@@ -203,6 +202,7 @@
   margin-right: auto;
   @media screen and (min-width: 768px) {
     display: flex;
+    margin-bottom: 0;
   }
 }
 .contacts-btn-list__item {
@@ -212,7 +212,6 @@
     margin-bottom: 10px;
   }
   @media screen and (min-width: 768px) {
-    margin-bottom: 0;
     justify-content: center;
     text-align: center;
 
