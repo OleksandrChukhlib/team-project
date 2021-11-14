@@ -1,10 +1,10 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
 <symbol id="icon-burger" viewBox="0 0 32 32">
-<path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.6" d="M0 6.402h32M0 16.002h32M0 25.602h32"></path>
+<path  style="stroke: var(--color1, #d41443)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.6" d="M0 6.402h32M0 16.002h32M0 25.602h32"></path>
 </symbol>
 <symbol id="icon-close" viewBox="0 0 32 32">
-<path fill="none" stroke="#fff"  stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M2.522 2.001l26.978 28.018M2.001 29.499l28.018-26.978"></path>
+<path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M2.522 2.001l26.978 28.018M2.001 29.499l28.018-26.978"></path>
 </symbol>
 <symbol id="icon-tick" viewBox="0 0 32 32">
 <path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M6.751 3.2l16.826 12.8-16.826 12.8"></path>
