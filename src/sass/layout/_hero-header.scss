@@ -295,6 +295,7 @@
   @media screen and (min-width: 1280px) {
     @include font(46px, 400, 53px, 0.04em);
   }
+  z-index: 1;
 }
 .hero__right__number::after {
   content: '';
@@ -305,6 +306,7 @@
   height: 16px;
   background-color: var(--primary-text-color);
   border-radius: 50%;
+  z-index: -1;
   @media screen and (min-width: 1280px) {
     width: 30px;
     height: 30px;
