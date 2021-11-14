@@ -163,7 +163,8 @@
     background-size: contain;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: #ecebeb;
   }
 
