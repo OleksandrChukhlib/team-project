@@ -1,0 +1,46 @@
+.advantages-section {
+  background-color: var(--secondary-bg-color);
+  padding-bottom: 97px;
+}
+.advantages {
+  // .advantages__list
+
+  &__list {
+  }
+}
+
+.advantages-list {
+}
+.advantages-list {
+  // .team-list__img
+
+  &__img {
+    padding-bottom: 16px;
+  }
+}
+.advantages-list {
+  // .advantages-list__number
+
+  &__number {
+    font-family: var(--secondary-font);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: calc(41 / 36);
+    letter-spacing: 0.04em;
+    color: var(--primary-title-color);
+    padding-bottom: 18px;
+  }
+
+  // .advantages-list__text
+
+  &__text {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: calc(20 / 12);
+    color: var(--secondary-text-color);
+    width: 230px;
+  }
+}
