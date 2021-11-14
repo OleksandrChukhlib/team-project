@@ -45,9 +45,14 @@
 .products__item {
   padding-top: 113px;
   position: relative;
-  &:not(:last-child) {
-    margin-bottom: 17px;
+  perspective: 600px;
+  transform-style: preserve-3d;
+  @media screen and (max-width: 766px) {
+    &:not(:last-child) {
+      margin-bottom: 17px;
+    }
   }
+
   @media screen and (min-width: 768px) {
     flex-basis: calc(100% / 3 - 20px);
     margin-left: 20px;
@@ -62,6 +67,7 @@
   border-radius: 24px;
   padding-top: 161px;
   padding-bottom: 41px;
+  backface-visibility: hidden;
   @media screen and (min-width: 768px) {
     padding-top: 150px;
   }
@@ -217,6 +223,10 @@
     @include font(16px, 700, 29px, 1px);
     width: 245px;
   }
+  .products-content__back-side & {
+    color: var(--third-text-color);
+    margin-bottom: 42px;
+  }
 }
 .products-content__text-none {
   @media screen and (min-width: 768px) {
@@ -243,4 +253,47 @@
 }
 .products-content__btn-icon {
   fill: currentColor;
+}
+.products-content__back-side {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  border-radius: 24px;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  padding: 70px 10px;
+}
+
+.products__item.is-flipped-back {
+  transform: rotateY(180deg);
+  transition: 2000ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.products__item.is-flipped-front {
+  transform: rotateY(360deg);
+  transition: 2000ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.back-side__icon {
+  transform: rotateY(180deg);
+}
+.products-description__title {
+  color: var(--primary-title-color);
+  font-family: var(--secondary-font);
+  @include font(18px, 400, 23px, 2px);
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 60px;
+  text-align: center;
+}
+.ice-cream-description {
+  background-image: linear-gradient(0deg, rgba(255, 184, 202, 1) 0%, rgba(255, 255, 255, 1) 90%);
+  border: 2px solid rgba(255, 184, 202, 1);
+}
+.ice-coffee-description {
+  background-image: linear-gradient(0deg, rgba(240, 209, 165, 1) 0%, rgba(255, 255, 255, 1) 90%);
+  border: 2px solid rgba(240, 209, 165, 1);
+}
+.milkshakes-description {
+  background-image: linear-gradient(0deg, rgba(194, 226, 151, 1) 0%, rgba(255, 255, 255, 1) 90%);
+  border: 2px solid rgba(194, 226, 151, 1);
 }
