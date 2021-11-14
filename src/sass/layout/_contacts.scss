@@ -2,7 +2,10 @@
   display: none;
 }
 .contacts-section {
-  background-color: #fff5f6;
+  background: linear-gradient(to top, #fff5f6, #fff5f6 94%, #ffffff 6%, #ffffff 6%);
+  @media screen and (min-width: 768px) {
+    background: linear-gradient(to top, #fff5f6, #fff5f6 85%, #ffffff 15%, #ffffff 15%);
+  }
 }
 .contact-container {
   margin: 0 auto;
@@ -11,6 +14,11 @@
     display: flex;
     max-width: 768px;
     margin-bottom: 80px;
+  }
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    max-width: 1280px;
+    margin-bottom: 85px;
   }
 }
 .cafe {
@@ -39,6 +47,11 @@
     }
     &:not(:last-child) {
       padding-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    &:not(:first-child) {
+      padding-top: 30px;
     }
   }
 }
@@ -79,6 +92,11 @@
   letter-spacing: 0.04em;
   margin-bottom: 10px;
   color: #000000;
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.04em;
+  }
 }
 .contact-text {
   font-style: normal;
@@ -91,9 +109,23 @@
     width: 145px;
     height: 65px;
   }
+  @media screen and (min-width: 1280px) {
+    width: 243px;
+    height: 90px;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.04em;
+  }
 }
-.time-work-item:not(:last-child) {
-  margin-bottom: 10px;
+.time-work-item {
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  @media screen and (min-width: 1280px) {
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
 }
 .time-work-item__day {
   font-style: normal;
@@ -102,6 +134,11 @@
   line-height: 1.83;
   letter-spacing: 0.04em;
   color: #000000;
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.04em;
+  }
 }
 .time-work-item__time {
   font-style: normal;
@@ -110,6 +147,11 @@
   line-height: 1.83;
   letter-spacing: 0.04em;
   color: #ffa5ba;
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.04em;
+  }
 }
 .contacts {
   font-style: normal;
@@ -117,6 +159,11 @@
   font-size: 12px;
   line-height: 1.5;
   color: #907e82;
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.04em;
+  }
 }
 .contact-section-box {
   width: 220px;
@@ -143,10 +190,28 @@
       margin-bottom: 0;
     }
   }
+  @media screen and (min-width: 1280px) {
+    width: 330px;
+    height: 572px;
+    padding-left: 44px;
+    padding-right: 44px;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    margin-left: 0;
+    &:not(:last-child) {
+      margin-right: 30px;
+      margin-bottom: 0;
+    }
+  }
 }
-
+.btn-contacts-svg {
+  margin-left: 13px;
+  width: 10px;
+  height: 13px;
+  fill: currentColor;
+}
 .contacts-btn-first {
-  width: 161.45px;
+  width: 162px;
   height: 44px;
   left: 79px;
   top: 6495px;
@@ -161,13 +226,20 @@
     background: #ffffff;
   }
   @media screen and (min-width: 768px) {
-    width: 191.45px;
+    width: 190px;
     left: 194px;
     top: 4027px;
   }
+  @media screen and (min-width: 1280px) {
+    width: 198px;
+    height: 44px;
+    left: 443px;
+    top: 4714px;
+  }
 }
+
 .contacts-btn-second {
-  width: 161.45px;
+  width: 162px;
   height: 44px;
   left: 79px;
   top: 6495px;
@@ -182,33 +254,15 @@
     background: #d41443;
   }
   @media screen and (min-width: 768px) {
-    width: 174.05px;
-    left: 399.95px;
+    width: 174px;
+    left: 400px;
     top: 4027px;
   }
-}
-.contacts-btn-list {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  @media screen and (min-width: 768px) {
-    display: flex;
-  }
-}
-.contacts-btn-list__item {
-  justify-content: center;
-  text-align: center;
-  &:not(:last-child) {
-    margin-bottom: 10px;
-  }
-  @media screen and (min-width: 768px) {
-    margin-bottom: 0;
-    justify-content: center;
-    text-align: center;
-
-    &:not(:last-child) {
-      margin-right: 15px;
-    }
+  @media screen and (min-width: 1280px) {
+    width: 180px;
+    height: 44px;
+    left: 656px;
+    top: 4714px;
   }
 }
 .contacts-btn-container {
