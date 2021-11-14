@@ -1,6 +1,15 @@
 <header class="header">
     <div class="container header__wrapper">
+        <div class="header__wrapper__left">
     <a href="" class="logo"><img src="./images/icecream-logo1x.png" alt="icecream logo"></a>
+    <ul class="mobile-container__menu header__menu">
+        <li class="mobile-container__item header__menu__item"><a href="" class="mobile-container__link header__menu__link">Home</a></li>
+        <li class="mobile-container__item header__menu__item"><a href="" class="mobile-container__link header__menu__link">About us</a></li>
+        <li class="mobile-container__item header__menu__item"><a href="" class="mobile-container__link header__menu__link">How it’s made?</a></li>
+        <li class="mobile-container__item header__menu__item"><a href="" class="mobile-container__link header__menu__link">Our products</a></li>
+        <li class="mobile-container__item header__menu__item"><a href="" class="mobile-container__link header__menu__link">Contact</a></li>
+    </ul>
+    </div>
     <div class="header__wrapper__right">
     <button type="button" class="header__btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu"><svg class="header__btn__icon"><use href="./images/icons.svg#icon-burger" /></svg></button>
     <button type="button" class="mobile-container__btn btn header__btn__buy">
@@ -23,11 +32,15 @@
          </div>
         <div class="hero__lert__buttom">
             <span>
-                <img src="./images/milk-hero-tablet1x.png" alt="milk">
+                <picture>
+                    <source srcset="./images/milk-hero-desc1x.png 1x, ./images/milk-hero-desc1x.png 2x" media="(min-width:1280px)">
+                    <source srcset="./images/milk-hero-tablet1x.png 1x, ./images/milk-hero-tablet1x.png 2x" media="(min-width:768px)">
+                    <img src="./images/milk-hero-tablet1x.png" alt="milk">
+                </picture>
             </span>
             <div class="hero__left__text">
             <p class="hero__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla omnis sit, consequatur dicta repellendus eos obcaecati 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             </p>
             <button class="hero__left__btn">
 
@@ -40,7 +53,13 @@
         <p class="hero__right__text">cafes</p>
         <p class="hero__right__number">23</p>
         <p class="hero__right__text">food trucks</p>
-        <span class="hero__right__img"><img src="./images/tasty-tablet1x.png" alt="tasty milk"></span>
+        <span class="hero__right__img">
+            <picture>
+                <source srcset="./images/tasty-desc1x.png 1x, ./images/tasty-desc2x.png 2x" media="(min-width:1280px)">
+                <source srcset="./images/tasty-tablet1x.png 1x, ./images/tasty-tablet2x.png 2x" media="(min-width:768px)">
+                <img src="./images/tasty-tablet1x.png" alt="tasty milk">
+            </picture>
+            </span>
 
 
     </div>
