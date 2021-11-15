@@ -1,31 +1,67 @@
 .review {
   padding-top: 80px;
   padding-bottom: 86px;
+
+  @media screen and (min-width: 768px) {
+    padding: 121px 74px 119px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 123px 176px 132px 178px;
+  }
 }
 
 .review__photo {
   margin: 0 auto 29px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 19px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 15px;
+  }
 }
 
 .review__wrapper {
   position: relative;
 
   margin-bottom: 30px;
-  padding: 40px 50px 20px;
+  padding: 43px 50px 20px;
 
   background-color: #fafafa;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 24px;
+    padding: 47px 36px 28px 60px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 15px;
+    padding: 47px 54px 32px 50px;
+  }
 
   &::before {
     content: '';
     position: absolute;
     z-index: 0;
-    top: 25px;
-    left: 60px;
+    top: 28px;
+    left: 61px;
 
     display: inline-block;
     width: 54px;
     height: 40px;
     background-image: url(../images/review-quote.svg);
+
+    @media screen and (min-width: 768px) {
+      top: 30px;
+      left: 40px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      top: 32px;
+      left: 50px;
+    }
   }
 }
 
@@ -39,7 +75,23 @@
   color: var(--secondary-text-color);
   text-align: center;
 
-  background-image: repeating-linear-gradient(transparent, transparent 29px, #e1e1e1 30.4px);
+  background-image: repeating-linear-gradient(transparent, transparent 28.8px, #e1e1e1 30.4px);
+
+  @media screen and (min-width: 768px) {
+    padding-right: 44px;
+    padding-left: 20px;
+
+    @include font(14px, 500, 30px, 0.04em);
+
+    background-image: repeating-linear-gradient(transparent, transparent 28px, #e1e1e1 29.6px);
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-right: 35px;
+    padding-left: 37px;
+
+    @include font(16px, 500, 30px, 0.04em);
+  }
 }
 
 .review__name {
@@ -47,8 +99,16 @@
   flex-direction: column;
   align-items: center;
 
-  @include font(14px, 500, 26.04px, normal);
+  @include font(14px, 500, 26px, normal);
   color: var(--secondary-text-color);
+
+  @media screen and (min-width: 768px) {
+    @include font(16px, 500, 30px, normal);
+  }
+
+  @media screen and (min-width: 1280px) {
+    @include font(20px, 500, 37px, normal);
+  }
 
   &::before {
     content: '';
@@ -57,6 +117,14 @@
     width: 32px;
     height: 4px;
     background-image: url(../images/review-dots.svg);
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 14px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 15px;
+    }
   }
 
   &::after {
@@ -66,5 +134,9 @@
     width: 72.4px;
     height: 12px;
     background-image: url(../images/review-pagination.svg);
+
+    @media screen and (min-width: 768px) {
+      margin-top: 35px;
+    }
   }
 }
