@@ -41,17 +41,17 @@
   }
 }
 
-// .modal__text {
-//   margin-top: 30px;
-//   font-family: var(--primary-font);
-//   @include font(12px, 500, 19.44px, normal);
-//   color: var(--secondary-text-color);
-//   text-align: center;
+.modal__text {
+  margin-top: 30px;
+  font-family: var(--primary-font);
+  @include font(12px, 500, 19.44px, normal);
+  color: var(--secondary-text-color);
+  text-align: center;
 
-//   @media screen and (min-width: 768px) {
-//     @include font(16px, 400, 28px, normal);
-//   }
-// }
+  @media screen and (min-width: 768px) {
+    @include font(16px, 400, 28px, normal);
+  }
+}
 
 // .button-modal {
 //   position: absolute;
