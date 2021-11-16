@@ -4,7 +4,7 @@
         
         <button data-modal-close-hr type="button" class="button-modal">
             <svg class="button-modal__icon" weight="11px" height="11px">
-                <use href="./images/icons.svg#icon-close"></use>
+                <use href="./images/icons.svg#icon-cross"></use>
             </svg>
         </button>
         
@@ -15,9 +15,6 @@
                     <label class="form-fild__label" for="name">Name</label>
         
                     <div class="input-wrapper"> <input class="form-fild__input" type="text" name="name" id="name">
-                        <svg class="form-fild__icon" width="18" height="18">
-                            <use href="./images/icons.svg#icon-close"></use>
-                        </svg>
                     </div>
         
                 </div>
@@ -25,20 +22,14 @@
                 <div class="form-fild">
                     <label class="form-fild__label" for="tel">Phone</label>
                     <div class="input-wrapper"><input class="form-fild__input" type="tel" name="tel" id="tel">
-                        <svg class="form-fild__icon" width="18" height="18">
-                            <use href="./images/icons.svg#icon-close"></use>
-                        </svg>
-        
+                        
                     </div>
                 </div>
         
                 <div class="form-fild">
                     <label class="form-fild__label" for="email">Mail</label>
                     <div class="input-wrapper"> <input class="form-fild__input" type="email" name="email" id="email">
-                        <svg class="form-fild__icon" width="18" height="18">
-                            <use href="./images/icons.svg#icon-close"></use>
-                        </svg>
-        
+                        
                     </div>
                 </div>
             </div>
@@ -56,7 +47,7 @@
                     <input class="policy__checkbox" type="checkbox" name="policy">
         
                     <svg class="policy__icon" width="16" height="15">
-                        <use href="./images/icons.svg#icon-close"></use>
+                        <use href="./images/icons.svg#icon-check"></use>
                     </svg>
         
                     I agree with the company policy and accept <a class="policy__link" href="">Terms of an agreement </a>
@@ -74,11 +65,59 @@
 <!-- Hero mobile section modal -->
 <div data-modal-hr-mob class="backdrop is-hidden">
     <div class="modal">
-        <p class="modal__title">Hero Mobile</p>
+        <form class="modal-form">
+            <div role="group">
+                <h2 class="modal-form__title">Leave your order here, we will call you back</h2>
+                <div class="form-fild">
+                    <label class="form-fild__label" for="name">Name</label>
+        
+                    <div class="input-wrapper"> <input class="form-fild__input" type="text" name="name" id="name">
+                    </div>
+        
+                </div>
+        
+                <div class="form-fild">
+                    <label class="form-fild__label" for="tel">Phone</label>
+                    <div class="input-wrapper"><input class="form-fild__input" type="tel" name="tel" id="tel">
+                    </div>
+                </div>
+        
+                <div class="form-fild">
+                    <label class="form-fild__label" for="email">Mail</label>
+                    <div class="input-wrapper"> <input class="form-fild__input" type="email" name="email" id="email">
+                    </div>
+                </div>
+            </div>
+        
+            <div class="form-fild">
+                <label class="form-fild__label" for="comment">Leave a comment</label>
+                <textarea class="form-fild__input form-fild__input--textarea" name="comment" id="comment" rows="5"
+                    placeholder=""></textarea>
+            </div>
+        
+        
+            <div class="policy">
+        
+                <label class="policy__label">
+                    <input class="policy__checkbox" type="checkbox" name="policy">
+        
+                    <svg class="policy__icon" width="16" height="15">
+                        <use href="./images/icons.svg#icon-check"></use>
+                    </svg>
+        
+                    I agree with the company policy and accept <a class="policy__link" href="">Terms of an agreement </a>
+        
+        
+                </label>
+            </div>
+        
+        
+            <button class="button button--size" type="submit">Send</button>
+        </form>
 
         <button data-modal-close-hr-mob type="button" class="button-modal">
             <svg class="button-modal__icon" weight="11px" height="11px">
-                <use href="./images/icons.svg#icon-close"></use>
+                <use href="./images/icons.svg#icon-cross"></use>
             </svg>
         </button>
     </div>
@@ -97,7 +136,7 @@
             </p>
         <button data-modal-close type="button" class="button-modal">
             <svg class="button-modal__icon" weight="11px" height="11px">
-                <use href="./images/icons.svg#icon-close"></use>
+                <use href="./images/icons.svg#icon-cross"></use>
             </svg>
         </button>
     </div>
@@ -111,9 +150,9 @@
     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       
 
-        <button data-modal-close-loc type="button" class="button-modal">
+        <button data-modal-close-loc type="button" class="button-modal button-modal--location">
             <svg class="button-modal__icon" weight="11px" height="11px">
-                <use href="./images/icons.svg#icon-close"></use>
+                <use href="./images/icons.svg#icon-cross"></use>
             </svg>
         </button>
     </div>
@@ -121,12 +160,33 @@
 
 <!-- Franchise modal -->
 <div data-modal-fra class="backdrop is-hidden">
-    <div class="modal ">
-        <p class="modal__title">Franchise</p>
+    <div class="modal modal-franchise">
+        <form class="modal-form">
+            <div role="group">
+                <h2 class="modal-form__title">Get a franchise in just a few clicks</h2>
+                
+        
+                <p class="modal__text modal__text--margin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit maxime, deleniti obcaecati aliquam nostrum quibusdam explicabo incidunt mollitia temporibus ducimus quasi labore blanditiis officiis adipisci iure quas iusto, harum dicta.</p>
+        
+                <div class="form-fild">
+                    <label class="form-fild__label" for="email">Mail</label>
+                    <div class="input-wrapper"> <input class="form-fild__input" type="email" name="email" id="email">
+                       
+                    </div>
+                </div>
+            </div>
+        
+                   
+        
+        
+            <button class="button button--size" type="submit">Send</button>
+        </form>
+
+            
 
         <button data-modal-close-fra type="button" class="button-modal">
             <svg class="button-modal__icon" weight="11px" height="11px">
-                <use href="./images/icons.svg#icon-close"></use>
+                <use href="./images/icons.svg#icon-cross"></use>
             </svg>
         </button>
     </div>
