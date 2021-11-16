@@ -27,6 +27,13 @@
   }
 }
 .gallery__item {
+  transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    transform: scale(1.5);
+    border-radius: 20px;
+    box-shadow: 9px 10px 8px 0px rgba(75, 2, 21, 0.2);
+  }
   &:nth-child(1) {
     grid-column-start: 1;
     grid-column-end: 2;
