@@ -72,14 +72,20 @@
 .for-background {
   // max-width: 1600px;
   background-color: var(--primary-bg-color);
+  background-image: radial-gradient(circle closest-side, #ffa5ba 176px, #ffb8ca 50px);
+  background-position: top 5px left 45px;
+  background-repeat: no-repeat;
+  @media screen and (min-width: 768px) {
+    background-image: none;
+  }
 }
 
 .hero {
   position: relative;
   z-index: 2;
-  background-color: var(--primary-bg-color);
+  background-color: transparent;
   height: 502px;
-  width: 380px;
+  width: 320px;
   padding-top: 193px;
   padding-bottom: 160px;
   margin-left: auto;
@@ -325,9 +331,31 @@
     position: absolute;
     bottom: 0;
     right: 34px;
+    &:hover {
+      transform: scale(2);
+    }
   }
   @media screen and (min-width: 1280px) {
     right: 109px;
+  }
+}
+.text-for-animacion {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    transform: rotate(15deg);
+    font-family: var(--secondary-font);
+    width: 150px;
+    top: 162px;
+    left: 548px;
+    color: var(--primary-title-color);
+    @include font(34px, 400, 31px, 0.04em);
+  }
+  @media screen and (min-width: 1280px) {
+    top: 245px;
+    left: 907px;
+    @include font(58px, 400, 52px, 0.04em);
   }
 }
 .hero__right__number {
