@@ -5,7 +5,7 @@ $(document).ready(function () {
     dotsClass: 'review-slider__dots',
     speed: 500,
     infinite: true,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 2500,
     pauseOnFocus: true,
     pauseOnHover: true,
