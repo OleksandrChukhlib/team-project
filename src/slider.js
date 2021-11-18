@@ -11,5 +11,6 @@ $(document).ready(function () {
     pauseOnHover: true,
     pauseOnDotsHover: true,
     swipe: true,
+    adaptiveHeight: true
   });
 });
